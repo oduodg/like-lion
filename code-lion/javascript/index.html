@@ -8,14 +8,11 @@
 <body>
     <h1>로또 번호 추첨기</h1>
     <script>
-        var lotto = []; // 배열 생성
+    var lotto = [];
+    for (var i = 0; i < 6; i++) { // 6번 반복하는 for문
         lotto.push(parseInt(Math.random() * 45 + 1));
-        lotto.push(parseInt(Math.random() * 45 + 1));
-        lotto.push(parseInt(Math.random() * 45 + 1));
-        lotto.push(parseInt(Math.random() * 45 + 1));
-        lotto.push(parseInt(Math.random() * 45 + 1));
-        lotto.push(parseInt(Math.random() * 45 + 1));
-        document.write(lotto);
+    }
+    document.write(lotto);
     </script>
 </body>
 </html>
