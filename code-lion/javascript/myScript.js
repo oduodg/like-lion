@@ -1,0 +1,1 @@
+document.write('은이 짱짱')
