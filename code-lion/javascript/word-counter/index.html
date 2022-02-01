@@ -17,10 +17,10 @@
 <body class="container">
     <h1>자기소개</h1>
     <textarea class="form-control" rows="3" id="jasoseol">저는 인성 문제가 없습니다.</textarea>
+    <span id="count">(0/200)</span>
     <script>
-        console.log('코드라이언'); // 콘솔 창에 출력하기
         var content = document.getElementById('jasoseol').value;
-        console.log(content);
+        document.getElementById('count').innerHTML = '(' + content.length + '/200)';
     </script>
 </body>
 </html>
