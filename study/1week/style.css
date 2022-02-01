@@ -1,0 +1,63 @@
+img {
+  display: block;
+}
+h2 {
+  text-align: center;
+  font-size: 36px;
+}
+.reInfo {
+  text-align: center;
+  margin-bottom: 20px;
+  co
+}
+p {
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.subTitle {
+  color: grey;
+  font-size: 30px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.ingredient__box {
+  background-color: rgb(219, 235, 148);
+  border: 1px solid #3b8616;
+  padding: 25px 30px;
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.centerBold {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+.textAlcenter {
+  text-align: center;
+}
+figcaption {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.recipe__box {
+  border: #f0f0f0 solid 1px;
+  border-radius: 10px 10px 0px 0px;
+}
+.title {
+  margin: 0px;
+  background-color: skyblue;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
+}
+.content {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
