@@ -52,11 +52,15 @@
         $('#drone').click(function(){ // 드론을 클릭하면
             $('#spit').fadeIn(); // 침 이미지 나타내기
             $('#spit').animate({left: '+=250'}); // 현재 위치에서 침 이미지를 250만큼 이동(침 발사)
-            $('#spit').fadeOut(function(){
+            $('#spit').fadeOut(function(){ // 침 이미지 사라지기
                 // fadeOut함수가 종료된 뒤, 실행됨
                 hp = hp - 1; // 침을 맞으면 hp 1 감소
                 $('#hp').text('HP :' + hp);
-            }); // 침 이미지 사라지기
+                if (hp==0) { // hp가 0이 되면
+                    $('#bunker').fadeOut(); // 벙커 이미지 사라지기
+                }
+
+            });
             $('#spit').css({left: '150px'}); // 침 이미지를 원래 위치인 드론 앞으로 변경
         })
     </script>
