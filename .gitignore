@@ -1,2 +1,4 @@
 # ignore .DS_Store file
 .DS_Store
+자료/
+*.pdf
