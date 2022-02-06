@@ -91,19 +91,27 @@
         var now = new Date(); // 오늘
         var start = new Date('2020-06-30'); // 사귄 날
 
+        //우리 몇 일째?
         var timeDiff = now.getTime() - start.getTime();
         var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1); // 사귄 날부터 1일로 치므로 1 더해주기
         $('#love').text(day + '일째');
 
+        //기념일까지 남은 날짜는?
         var valentine = new Date('2022-02-14');
         var timeDiff2 = valentine.getTime() - now.getTime();
         var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
         $('#valentine').text(day2 + '일 남음');
 
+        //천일은 언제인가?
         var ms = start.getTime() + 999 *(1000 * 60 * 60 * 24);
         var thousand = new Date(ms);
-        var thousandDate = thousand.getFullYear() + '.' + thousand.getMonth()+1 + '.' + thousand.getDate();
+        var thousandDate = thousand.getFullYear() + '.' + (thousand.getMonth()+1) + '.' + thousand.getDate();
         $('#thousand-date').text(thousandDate);
+
+        //기념일까지 남은 날짜는?
+        var timeDiff3 = thousand.getTime() - now.getTime();
+        var day3 = Math.floor(timeDiff3 / (1000 * 60 * 60 * 24) + 1);
+        $('#thousand').text(day3 + '일 남음');
     </script>
 </body>
 </html>
